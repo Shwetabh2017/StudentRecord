@@ -164,7 +164,7 @@ public class MainActivity extends AppCompatActivity {
 
                         } else {
 
-                           // postNewComment(getApplication(), mname, mid, mroll, mclass, idsubject, idmarks);
+                            postNewComment(getApplication(), mname, mid, mroll, mclass, idsubject, idmarks);
                             Toast.makeText(getBaseContext(), "Username: " + mname + " Record Updated", Toast.LENGTH_SHORT).show();
                             adapter.notifyDataSetChanged();
                             dialog.dismiss();
@@ -225,7 +225,7 @@ public class MainActivity extends AppCompatActivity {
 
                         if (!TextUtils.isEmpty(mname.trim())) {
 
-                            //  postNewComment(getApplication(), mname, mroll, mclass, idsubject, idmarks);
+                            postNewComment(getApplication(), mname, mroll, mclass, idsubject, idmarks);
                             Toast.makeText(getBaseContext(), "Username: " + mname + " New Record Added", Toast.LENGTH_SHORT).show();
                           /*  Intent intent = new Intent(MainActivity.this,MainActivity.class);
                             startActivity(intent);*/
