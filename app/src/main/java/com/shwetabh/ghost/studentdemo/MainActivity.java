@@ -167,6 +167,8 @@ public class MainActivity extends AppCompatActivity {
                             postNewComment(getApplication(), mname, mid, mroll, mclass, idsubject, idmarks);
                             Toast.makeText(getBaseContext(), "Username: " + mname + " Record Updated", Toast.LENGTH_SHORT).show();
                             adapter.notifyDataSetChanged();
+                            Intent intent = new Intent(MainActivity.this,MainActivity.class);
+                            startActivity(intent);
                             dialog.dismiss();
                         }
                     }
@@ -227,9 +229,8 @@ public class MainActivity extends AppCompatActivity {
 
                             postNewComment(getApplication(), mname, mroll, mclass, idsubject, idmarks);
                             Toast.makeText(getBaseContext(), "Username: " + mname + " New Record Added", Toast.LENGTH_SHORT).show();
-                          /*  Intent intent = new Intent(MainActivity.this,MainActivity.class);
-                            startActivity(intent);*/
-                           dialog.dismiss();
+
+                            dialog.dismiss();
 
 
                         } else {
